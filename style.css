@@ -143,25 +143,35 @@ nav ul li a:hover::after {
 }
 
 #ins_Image{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
 
 }
 #selectedImage {
     position: relative;
-    top: 0; /* Adjust this as needed */
+    top: -20vh; /* Adjust this as needed */
     left: 0; /* Adjust this as needed */
 }
 
 
-.Image-Location{
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    margin-top: 32%;
-}
-
 .button-row {
     display: flex;
+    position:fixed;
+    top: 70vh;
     padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.picture{
+    height: 95%;
+    position: relative;
+    top: 20vh;
 }
 
 /* Add some styling to the buttons */
@@ -174,3 +184,16 @@ button {
     cursor: pointer;
     margin: 4px;
 }
+  
+.image-container {
+    width: 70vh;
+    height: 50vh;
+    left: 65vh;
+    top: 10vh;
+    background-color: #ccc; /* Gray background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
