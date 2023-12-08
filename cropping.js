@@ -5,15 +5,11 @@ let aspectRatio = document.querySelectorAll(".aspect-ratio-button");
 const previewButton = document.getElementById("preview");
 const previewImage = document.getElementById("preview-image");
 const options = document.querySelector(".options");
-const widthInput = document.getElementById("width-input");
-const heightInput = document.getElementById("height-input");
 let cropper = "";
 let fileName = "";
 
 fileInput.onchange = () => {
   previewImage.src = "";
-  heightInput.value = 0;
-  widthInput.value = 0;
   downloadButton.classList.add("hide");
 
   //The FileReader object helps to read contents of file stored on the computer
@@ -45,22 +41,6 @@ aspectRatio.forEach((element) => {
   });
 });
 
-heightInput.addEventListener("input", () => {
-  const { height } = cropper.getImageData();
-  if (parseInt(heightInput.value) > Math.round(height)) {
-    heightInput.value = Math.round(height);
-  }
-  let newHeight = parseInt(heightInput.value);
-  cropper.setCropBoxData({ height: newHeight });
-});
-widthInput.addEventListener("input", () => {
-  const { width } = cropper.getImageData();
-  if (parseInt(widthInput.value) > Math.round(width)) {
-    widthInput.value = Math.round(width);
-  }
-  let newWidth = parseInt(widthInput.value);
-  cropper.setCropBoxData({ width: newWidth });
-});
 
 previewButton.addEventListener("click", (e) => {
   e.preventDefault();

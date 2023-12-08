@@ -29,20 +29,15 @@
 <body>
 <div class="container-">
 
-  <!--  <div class="stripes">-->
-  <!--    <div class="line-one"></div>-->
-  <!--    <div class="line-two"></div>-->
-  <!--  </div>-->
-  <!-- navbar============== -->
   <nav>
     <div class="logo">
       <span>CSCI 3240U</span>
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="">Cropping Tool</a></li>
+      <li><a href="cropping.html">Cropping Tool</a></li>
       <li><a href="filters.html">Filters </a></li>
-      <li><a href="grayscale.html">Gray Scale</a></li>
+      <li><a href="">Gray Scale</a></li>
     </ul>
     <div class="search">
       <i class="fa fa-search"></i>
@@ -60,33 +55,26 @@
   </div>
 </div>
 
-<!--Cropping TOOL-->
-<div class="wrapper">
-  <div class="container">
-    <div class="image-container">
-      <img id="image" />
-    </div>
-    <div class="preview-container">
-      <img id="preview-image" />
-    </div>
+    <div class="wrapper">
+        <div class="container">
+        <div class="image-container">
+            <img id="image" />
+        </div>
+        <div class="preview-container">
+            <img id="preview-image" />
+        </div>
+        </div>
+        <input type="file" id="file" accept="image/*" />
+        <label for="file">Choose A Photo</label>
+        <div class="options hide">
+        <!-- Remove aspect ratio buttons -->
+        </div>
+        <div class="btns">
+        <button id="preview">Gray Scale</button>
+        <a href="" id="download" class="hide" download>Download</a>
+        </div>
   </div>
-  <input type="file" id="file" accept="image/*" />
-  <label for="file">Choose A Photo</label>
-  <div class="options hide">
-    <button class="aspect-ratio-button">16:9</button>
-    <button class="aspect-ratio-button">4:3</button>
-    <button class="aspect-ratio-button">1:1</button>
-    <button class="aspect-ratio-button">2:3</button>
-    <button class="aspect-ratio-button">Free</button>
-  </div>
-  <div class="btns">
-    <button id="preview" class="hide">Crop</button>
-    <a href="" id="download" class="hide">Download</a>
-  </div>
-</div>
-
-<script src="cropperjs/cropper.min.js"></script>
-<script src="cropping.js"></script>
+  <script src="grayscale.js"></script>
 </body>
 
 </html>

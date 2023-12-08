@@ -39,7 +39,7 @@ nav ul {
     text-align: right;
     position: absolute;
     margin-top: 4%;
-    padding: 35%;
+    padding: 56%;
     padding-right: 270px;
 }
 
@@ -159,6 +159,11 @@ nav ul li a:hover::after {
   max-height: 100%;
   display: block;
   margin: auto;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .preview-container {
