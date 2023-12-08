@@ -178,7 +178,7 @@ input[type="file"] {
 label {
     display: block;
     position: relative;
-    background-color: #025bee;
+    background-color: #000000;
     color: #ffffff;
     font-size: 16px;
     text-align: center;
@@ -211,9 +211,9 @@ img {
 button {
     padding: 1em;
     border-radius: 0.3em;
-    border: 2px solid #025bee;
-    background-color: #ffffff;
-    color: #025bee;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
 .btns {
     display: flex;
