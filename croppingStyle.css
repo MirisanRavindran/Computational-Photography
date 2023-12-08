@@ -9,6 +9,10 @@ body {
     font-family: poppins;
 }
 
+.h {
+    top: -5%;
+}
+
 .line-one {
     position: fixed;
     width: 15px;
@@ -39,7 +43,7 @@ nav ul {
     text-align: right;
     position: absolute;
     margin-top: 4%;
-    padding: 56%;
+    padding: 48%;
     padding-right: 270px;
 }
 
