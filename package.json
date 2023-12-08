@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jimp": "^0.22.10",
+    "xmlbuilder": "^15.1.1"
+  },
+  "name": "computational-photography",
+  "version": "1.0.0",
+  "main": "cropping.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

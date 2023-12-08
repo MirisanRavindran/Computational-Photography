@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: poppins;
+}
+
+.line-one {
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+    background: #ff3131;
+    left: 23%;
+}
+
+.line-two {
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #183d79;
+    left: 25%;
+}
+
+nav {
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 270px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff3131;
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    left: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search {
+    position: fixed;
+    right: 160px;
+}
+
+.menu {
+    position: fixed;
+    right: 100px;
+}
+
+.media ul {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+    top: 63%;
+    padding: 10px 10px;
+}
+
+.media ul li {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 24px 0;
+    transition: .3s;
+}
+
+.media ul li:hover {
+    transform: scale(1.8);
+}
+
+#ins_Image{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-style: solid;
+}
+
+.frame{
+    height: 50vh;
+    width: 50vh;
+}
+.cropping-container {
+    position: relative;
+    top: 15%;
+    left: 25%;
+    max-width: 55%;
+    max-height: 100%;
+    justify-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+#output{
+    border-style: solid;
+    height: 50vh;
+    width: 50vh;
+}
+
+.virtical-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.virtical-button {
+    font-weight: bold;
+    width: 100%;
+    background-color: #3399ff;
+    border: none;
+    height: 6%;
+}
+
+
+
